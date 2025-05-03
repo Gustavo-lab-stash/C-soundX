@@ -1,0 +1,14 @@
+C:\Users\gusta\Desktop\Alura\C# music project\bin\Debug\net9.0\C# music project.exe
+C:\Users\gusta\Desktop\Alura\C# music project\bin\Debug\net9.0\C# music project.deps.json
+C:\Users\gusta\Desktop\Alura\C# music project\bin\Debug\net9.0\C# music project.runtimeconfig.json
+C:\Users\gusta\Desktop\Alura\C# music project\bin\Debug\net9.0\C# music project.dll
+C:\Users\gusta\Desktop\Alura\C# music project\bin\Debug\net9.0\C# music project.pdb
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.AssemblyInfoInputs.cache
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.AssemblyInfo.cs
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.dll
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\refint\C# music project.dll
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.pdb
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.genruntimeconfig.cache
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\ref\C# music project.dll
