@@ -1,5 +1,6 @@
 ﻿string welc= "Welcome to SoundX";
-List<string> artistslist=new List<string>();
+//List<string> artistslist=new List<string>();
+Dictionary<string,List<int>> artistsanotes= new Dictionary<string,List<int>>();
 
 void welcome()
 {   Console.WriteLine(@"
@@ -23,9 +24,9 @@ void menu(){
         break;
     case 2: show();
         break;
-    case 3:Console.WriteLine("You chose: "+optnum);
+    case 3: artscore();
         break;
-    case 4:Console.WriteLine("You chose: "+optnum);
+    case 4:average();
         break;
     case 0:Console.WriteLine("you chose: "+optnum);
         Console.Write("Bye!!!");
@@ -37,11 +38,12 @@ void menu(){
 
 }
 void register(){
+    //option 1
     Console.Clear();
-    Console.WriteLine("Option 1: *Artist registering*");
+    Console.WriteLine("Option 1: Register artists*");
     Console.Write("Type the name of the artist: ");
     string name=Console.ReadLine()!;
-    artistslist.Add(name);
+    artistsanotes.Add(name,new List<int>());
     Console.WriteLine($"The artist {name} has been registered with success");
     Thread.Sleep(3000);
     Console.Clear();
@@ -51,8 +53,10 @@ void register(){
 }
 void show(){
     Console.Clear();
+    Console.WriteLine("*Option 2:Show registered artists*");
+    Thread.Sleep(2000);
     Console.WriteLine("OK,Let's see the artist you registered");
-    foreach(string art in artistslist){
+    foreach(string art in artistsanotes.Keys){
         Console.WriteLine($"Artist: {art}");
     }
     Console.WriteLine("Press any key to continue.");
@@ -61,12 +65,59 @@ void show(){
     welcome();
     menu();    
 }
+void artscore(){
+    //choose a band to give a note 
+    //if the band exist in the dictionary,give a note to it
+    //iff the band doesn't exist,go back to the menu
+    Console.Clear();
+    Console.WriteLine("Score a artist");
+    Console.Write("Type the name of the artist you want to score: ");
+    string name=Console.ReadLine()!;
+    if(artistsanotes.ContainsKey(name)){
+        Console.Write($"What note you give to {name}?");
+        int note=int.Parse(Console.ReadLine()!);
+        artistsanotes[name].Add(note);
+        Console.WriteLine($"The note {note} has been registered to the artist {name}");
+        Thread.Sleep(2000);
+        Console.Clear();
+        menu();
 
+    }
+    else{
+        Console.WriteLine($"The artist {name} was not found!");
+        Console.WriteLine("Type any key to go back to menu.");
+        Console.ReadKey();
+        Console.Clear();
+        welcome();
+        menu();
 
+    }
+
+}
+void average(){
+    Console.Clear();
+    Console.WriteLine("Option 4: Average score");
+    Console.WriteLine("Type the name of the artist");
+    string name=Console.ReadLine()!;
+    if(artistsanotes.ContainsKey(name)){
+        List<int> averagenote= artistsanotes[name];
+        Console.WriteLine($"the average of the artist {name} is {averagenote.Average()}");
+        Console.WriteLine("Press any key to go back to menu");
+        Console.ReadKey();
+        Console.Clear();
+        menu();
+
+    }
+else{
+    Console.WriteLine("This artist is not registered.");
+    Console.Clear();
+    Console.ReadKey();
+    welcome();
+    menu();
+}
+}
 
 welcome();
 menu();
 
-//for (int i =0;i<artists.Count; i++){
-    //    Console.WriteLine($"Artists:  {artists[i]}");
-    //}
+

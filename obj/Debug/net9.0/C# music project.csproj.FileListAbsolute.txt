@@ -12,3 +12,4 @@ C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\refint\C# music p
 C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.pdb
 C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.genruntimeconfig.cache
 C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\ref\C# music project.dll
+C:\Users\gusta\Desktop\Alura\C# music project\obj\Debug\net9.0\C# music project.sourcelink.json
